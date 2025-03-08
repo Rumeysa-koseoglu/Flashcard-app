@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flashcard App</title>
     <!-- Font Awesome Icons -->
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <!-- Stylesheet -->
@@ -20,9 +20,22 @@
         </div>
 
         <!-- Display Card of Question And Answers Here-->
-         <div id="card-con">
+        <div id="card-con">
             <div class="card-list-container"></div>
-         </div>
+        </div>
+    </div>
+
+    <!-- Input form for users to fiil question and answer -->
+    <div class="question-container hide" id="add-question-card">
+        <h2>Add Flashcard</h2>
+        <div class="wrapper">
+            <!-- Error message -->
+             <div class="error-con">
+                <span class="hide" id="error">Input fields cannot be empty!</span>
+             </div>
+             <!-- Close Button -->
+             <i class="fa-solid fa-xmark"></i>
+        </div>
     </div>
 
     <!-- Script -->
