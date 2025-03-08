@@ -8,3 +8,32 @@
 body {
     background-color: #f7f9fd;
 }
+
+.container {
+    width: 90vw;
+    max-width: 62.5em;
+    border: 1px solid black;
+    position: relative;
+    margin: auto;
+}
+
+.add-flashcard-con {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.2em 1em;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.add-flashcard-con button {
+    font-size: 1em;
+    background-color: #587ef4;
+    color: #ffffff;
+    padding: 0.8em 1.2em;
+    font-weight: 500;
+    border-radius: 0.4em;
+}
