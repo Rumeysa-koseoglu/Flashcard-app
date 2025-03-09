@@ -96,3 +96,40 @@ button {
     cursor: pointer;
     justify-self: flex-end;
 }
+
+label {
+    color: #363d55;
+    font-weight: 600;
+    margin-bottom: 0.3em;
+}
+
+textarea {
+    width: 100%;
+    padding: 0.7em 0.5em;
+    border: 1px solid #d0d0d0;
+    outline: none;
+    color: #414a67;
+    border-radius: 0.3em;
+    resize: none;
+}
+
+textarea:not(:last-child) {
+    margin-bottom: 1.2em;
+}
+
+textarea:focus {
+    border-color: #363d55;
+}
+
+#save-btn {
+    font-size: 1em;
+    background-color: #587ef4;
+    color: #ffffff;
+    padding: 0.6em 0;
+    border-radius: 0.3em;
+    font-weight: 600;
+}
+
+.hide {
+    display: none;
+}
