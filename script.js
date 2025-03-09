@@ -57,6 +57,34 @@ function viewList() {
     var displayAnswer = document.createElement("p");
     displayAnswer.classList.add("answer-div");
     displayAnswer.innerText = answer.value;
+
+    //Link to show/hide answer
+    var link = document.createElement("a");
+    link.setAttribute("href", "#");
+    link.setAttribute("class", "show-hide-btn");
+    link.innerHTML = "Show/Hide";
+    link.addEventListener("click", () => {
+        displayAnswer.classList.toggle("hide");
+    });
+
+    div.appendChild(link);
+    div.appendChild(displayAnswer);
+
+    //Edit button
+    let buttonsCon = document.createElement("div");
+    buttonsCon.classList.add("buttons-con");
+    var editButton = document.createElement("button");
+    editButton.setAttribute("class", "edit");
+    editButton.innerHTML = `<i class="fa-solid fa-pen-to-square"></i>`;
+    editButton.addEventListener("click", () => {
+        editBool = true;
+        modifyElement(editButton, true);
+        addQuestionCard.classList.remove("hide");
+    });
+    buttonsCon.appendChild(editButton);
+    // disableButtons(false);
+
+    div.appendChild(buttonsCon);
     div.appendChild(displayAnswer);
 
     listCard[0].appendChild(div);
