@@ -90,3 +90,16 @@ function viewList() {
     listCard[0].appendChild(div);
     hideQuestion();
 }
+
+//modify elements
+const modifyElement = (element, edit = false) => {
+    let parentDiv = element.parentElement.parentElement;
+    let parentQuestion = parentDiv.querySelector(".question-div").innerText;
+    if (edit) {
+        let parentAns = parentDiv.querySelector(".answer-div").innerText;
+        answer.value = parentAns;
+        question.value = parentQuestion;
+        disableButtons(true);
+    }
+    parentDiv.remove();
+};
