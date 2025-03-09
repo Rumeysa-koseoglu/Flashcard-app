@@ -44,3 +44,21 @@ cardButton.addEventListener("click",
         }
     })
 );
+
+//Card Generate
+function viewList() {
+    var listCard = document.getElementsByClassName("card-list-container");
+    var div = document.createElement("div");
+    div.classList.add("card");
+    //question
+    div.innerHTML +=
+        `<p class="question-div">${question.value}</p>`;
+    //answer
+    var displayAnswer = document.createElement("p");
+    displayAnswer.classList.add("answer-div");
+    displayAnswer.innerText = answer.value;
+    div.appendChild(displayAnswer);
+
+    listCard[0].appendChild(div);
+    hideQuestion();
+}
