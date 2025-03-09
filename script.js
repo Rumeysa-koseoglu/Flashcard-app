@@ -7,3 +7,11 @@ const errorMessage = document.getElementById("error");
 const addQuestion = document.getElementById("add-flashcard");
 const closeBtn = document.getElementById("close-btn");
 let editBool = false;
+
+//Add question when user clicks 'Add Flashcard' button
+addQuestion.addEventListener("click", () => {
+    container.classList.add("hide");
+    question.value = "";
+    answer.value = "";
+    addQuestionCard.classList.remove("hide");
+});
