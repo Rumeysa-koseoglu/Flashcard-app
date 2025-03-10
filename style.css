@@ -144,6 +144,8 @@ textarea:focus {
 
 .question-div,
 .answer-div {
+    /*makes the text align evenly on both the left and right
+     sides by adjusting the space between words*/
     text-align: justify;
 }
 
