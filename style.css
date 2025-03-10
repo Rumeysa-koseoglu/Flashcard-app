@@ -18,6 +18,7 @@ body {
 
 .add-flashcard-con {
     display: flex;
+    /* moves items to the right side of the container when using Flexbox*/
     justify-content: flex-end;
     padding: 1.2em 1em;
 }
@@ -192,7 +193,7 @@ textarea:focus {
     display: none;
 }
 
-@media screen and ( max-width: 800px) {
+@media screen and (max-width: 800px) {
     .card-list-container {
         grid-template-columns: 1fr 1fr;
         gap: 0.8em;
