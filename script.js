@@ -10,7 +10,7 @@ let editBool = false;
 
 //Add question when user clicks 'Add Flashcard' button
 addQuestion.addEventListener("click", () => {
-    container.classList.remove("initial")
+    container.classList.remove("initial");
     container.classList.add("hide");
     question.value = "";
     answer.value = "";
