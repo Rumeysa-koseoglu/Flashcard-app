@@ -9,6 +9,14 @@ body {
     background-color: #f7f9fd;
 }
 
+.container.initial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
 .container {
     width: 90vw;
     max-width: 62.5em;
@@ -19,8 +27,10 @@ body {
 .add-flashcard-con {
     display: flex;
     /* moves items to the right side of the container when using Flexbox*/
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
     padding: 1.2em 1em;
+    margin-top: 1em;
 }
 
 button {

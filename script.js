@@ -10,6 +10,7 @@ let editBool = false;
 
 //Add question when user clicks 'Add Flashcard' button
 addQuestion.addEventListener("click", () => {
+    container.classList.remove("initial")
     container.classList.add("hide");
     question.value = "";
     answer.value = "";
@@ -125,3 +126,6 @@ const disableButtons = (value) => {
         element.disabled = value;
     });
 };
+window.onload = () => {
+    container.classList.add("initial");
+}
